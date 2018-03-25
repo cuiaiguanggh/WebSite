@@ -1,31 +1,126 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "公司首页";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<link href="~/Content/index.css" rel="stylesheet" />
+
+<div class="banner-box">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">              
+            </div>
+            <div class="item">   
+            </div>
+            <div class="item">              
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<div class="wrap clearfix">
+    <div class="row about-honor-bix">
+        <div class="col-md-6">
+            <h4>走进科润<span class="title-line"></span>INTO THE OUR</h4>
+            <div class="into-our-box">
+                <div class="mask">
+                    <p class="en">Company profile</p>
+                    <p class="title">企业简介 <span class="right-icon">></span></p>
+                    <p> 科润智能控制股份有限公司（原科润电力科技股份有限公司）是一家专业从事高低压成套设备、变压器及高压电器.... </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h4>企业荣誉<span class="title-line"></span>COMPANY HONOR</h4>
+            <div class="company-honor-box">
+                <div class="mask">
+                    <p>Company profile</p>
+                    <p>企业简介 <span  class="right-icon">></span></p>
+                    <p> 科润智能控制股份有限公司（原科润电力科技股份有限公司）是一家专业从事高低压成套设备、变压器及高压电器.... </p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+
+    <div class="product-dispaly-box" >
+        <h4>产品展示<span class="title-line"></span>PRODUCT DISPLAY</h4>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="~/Content/images/product.jpg" alt="Alternate Text" />
+                    <br />
+                    <strong class="infor">直流电动自行车充电桩</strong>
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/Content/images/product.jpg" alt="Alternate Text" />
+                    <br />
+                    <strong class="infor">直流电动自行车充电桩</strong>
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/Content/images/product.jpg" alt="Alternate Text" />
+                    <br />
+                    <strong class="infor">直流电动自行车充电桩</strong>
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/Content/images/product.jpg" alt="Alternate Text" />
+                    <br />
+                    <strong class="infor">直流电动自行车充电桩</strong>
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/Content/images/product.jpg" alt="Alternate Text" />
+                    <br />
+                    <strong class="infor">直流电动自行车充电桩</strong>
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/Content/images/product.jpg" alt="Alternate Text" />
+                    <br />
+                    <strong class="infor">直流电动自行车充电桩</strong>
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/Content/images/product.jpg" alt="Alternate Text" />
+                    <br />
+                    <strong class="infor">直流电动自行车充电桩</strong>
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/Content/images/product.jpg" alt="Alternate Text" />
+                    <br />
+                    <strong class="infor">直流电动自行车充电桩</strong>
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/Content/images/product.jpg" alt="Alternate Text" />
+                    <br />
+                    <strong class="infor">直流电动自行车充电桩</strong>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+    
 </div>
+<script src="~/Scripts/swiper.min.js"></script>
+<script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 3,
+            paginationClickable: true,
+            spaceBetween: 30
+        });
+</script>

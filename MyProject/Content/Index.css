@@ -1,0 +1,67 @@
+﻿.banner-box{
+    height:620px;
+}
+.banner-box .carousel,.carousel-inner .item,.carousel-inner {
+    height:100%;
+}
+
+.carousel-inner .item:nth-of-type(1){
+    background:url("/Content/images/banner1.jpg")  100% center;
+}
+.carousel-inner .item:nth-of-type(2){
+    background:url("/Content/images/banner2.jpg")  100% center;
+}
+.carousel-inner .item:nth-of-type(3){
+    background:url("/Content/images/banner3.jpg")  100% center;
+}
+.carousel-indicators li.active{
+    background-color:#0094ff;
+    border-color:#0094ff;
+}
+
+.into-our-box,.company-honor-box{
+    width:530px;
+    height:300px;
+    background-color:red;
+    position:relative;
+}
+.title-line{
+    width:1px;
+    background-color:#000;
+    margin:0 6px;
+    height:16px;
+    display:inline-block;
+    position: relative;
+    top: 2px;
+}
+.into-our-box .mask,.company-honor-box .mask{
+    background-color:rgba(0,0,0,0.7);
+    width:240px;
+    height:180px;
+    position:absolute;
+    right:0;
+    bottom:0;
+    color:#fff;
+    padding:15px;
+}
+.mask p.en{
+    font-size:16px;
+}
+.mask p.tilte{
+    font-size:24px;
+}
+.swiper-container{
+    height:350px;
+}
+.swiper-slide{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-right: 30px;
+}
+.swiper-slide>strong.infor{
+    font-size:16px;
+    color:#0094ff;
+    margin-top:10px;
+    display:inline-block;
+}
