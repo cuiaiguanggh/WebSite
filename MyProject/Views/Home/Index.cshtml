@@ -43,7 +43,7 @@
                 <div class="mask">
                     <p class="en">Company profile</p>
                     <p class="title">企业简介 <span class="right-icon">></span></p>
-                    <p> 科润智能控制股份有限公司（原科润电力科技股份有限公司）是一家专业从事高低压成套设备、变压器及高压电器.... </p>
+                    <p class="text-a">@Html.ActionLink("科润智能控制股份有限公司（原科润电力科技股份有限公司）是一家专业从事高低压成套设备、变压器及高压电器.... ", "About", "Home")</p>
                 </div>
             </div>
         </div>
@@ -53,7 +53,7 @@
                 <div class="mask">
                     <p>Company profile</p>
                     <p>企业简介 <span  class="right-icon">></span></p>
-                    <p> 科润智能控制股份有限公司（原科润电力科技股份有限公司）是一家专业从事高低压成套设备、变压器及高压电器.... </p>
+                    <p class="text-a">@Html.ActionLink("科润智能控制股份有限公司（原科润电力科技股份有限公司）是一家专业从事高低压成套设备、变压器及高压电器.... ", "Honor", "Home")</p>
                 </div>
             </div>
         </div>
@@ -64,50 +64,52 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="~/Content/images/product.jpg" alt="Alternate Text" />
-                    <br />
-                    <strong class="infor">直流电动自行车充电桩</strong>
+                    <div class="swiper-slide-img-box">
+                        <img src="~/Content/images/product/product-1.jpg" alt="Alternate Text" />
+                    </div>
+                    <strong class="infor">YB(ZBW1)型系列预装式变电站</strong>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="swiper-slide-img-box">
+                        <img src="~/Content/images/product/product-2.jpg" alt="Alternate Text" />
+                    </div>
+                    <strong class="infor">RBZ型预装式变电站（美式箱变)</strong>
                 </div>
                 <div class="swiper-slide">
-                    <img src="~/Content/images/product.jpg" alt="Alternate Text" />
-                    <br />
-                    <strong class="infor">直流电动自行车充电桩</strong>
+                    <div class="swiper-slide-img-box">
+                        <img src="~/Content/images/product/product-3.jpg" alt="Alternate Text" />
+                    </div>
+                    <strong class="infor">JP综合配电箱</strong>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="swiper-slide-img-box">
+                        <img src="~/Content/images/product/product-4.jpg" alt="Alternate Text" />
+                    </div>
+                    <strong class="infor">光伏变电站</strong>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="swiper-slide-img-box">
+                        <img src="~/Content/images/product/product-5.jpg" alt="Alternate Text" />
+                    </div>
+                    <strong class="infor">非晶合金变压器</strong>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="swiper-slide-img-box">
+                        <img src="~/Content/images/product/product-6.jpg" alt="Alternate Text" />
+                    </div>
+                    <strong class="infor">户内交流金属铠装中置式开关设备</strong>
                 </div>
                 <div class="swiper-slide">
-                    <img src="~/Content/images/product.jpg" alt="Alternate Text" />
-                    <br />
-                    <strong class="infor">直流电动自行车充电桩</strong>
+                    <div class="swiper-slide-img-box">
+                        <img src="~/Content/images/product/product-7.jpg" alt="Alternate Text" />
+                    </div>
+                    <strong class="infor">低压配电箱</strong>
                 </div>
-                <div class="swiper-slide">
-                    <img src="~/Content/images/product.jpg" alt="Alternate Text" />
-                    <br />
-                    <strong class="infor">直流电动自行车充电桩</strong>
-                </div>
-                <div class="swiper-slide">
-                    <img src="~/Content/images/product.jpg" alt="Alternate Text" />
-                    <br />
-                    <strong class="infor">直流电动自行车充电桩</strong>
-                </div>
-                <div class="swiper-slide">
-                    <img src="~/Content/images/product.jpg" alt="Alternate Text" />
-                    <br />
-                    <strong class="infor">直流电动自行车充电桩</strong>
-                </div>
-                <div class="swiper-slide">
-                    <img src="~/Content/images/product.jpg" alt="Alternate Text" />
-                    <br />
-                    <strong class="infor">直流电动自行车充电桩</strong>
-                </div>
-                <div class="swiper-slide">
-                    <img src="~/Content/images/product.jpg" alt="Alternate Text" />
-                    <br />
-                    <strong class="infor">直流电动自行车充电桩</strong>
-                </div>
-                <div class="swiper-slide">
-                    <img src="~/Content/images/product.jpg" alt="Alternate Text" />
-                    <br />
-                    <strong class="infor">直流电动自行车充电桩</strong>
-                </div>
+                
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
