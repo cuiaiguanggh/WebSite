@@ -221,6 +221,17 @@
     <Content Include="Content\images\product\product-7.jpg" />
     <Content Include="Content\images\product\product-8.jpg" />
     <Content Include="Content\images\product\product-9.jpg" />
+    <Content Include="Content\images\sample\sample-1.jpg" />
+    <Content Include="Content\images\sample\sample-2.jpg" />
+    <Content Include="Content\images\sample\sample-3.jpg" />
+    <Content Include="Content\images\sample\sample-4.jpg" />
+    <Content Include="Content\images\show\show-1.jpg" />
+    <Content Include="Content\images\show\show-2.jpg" />
+    <Content Include="Content\images\show\show-3.jpg" />
+    <Content Include="Content\images\show\show-4.jpg" />
+    <Content Include="Content\images\show\show-5.jpg" />
+    <Content Include="Content\images\show\show-6.jpg" />
+    <Content Include="Content\images\show\show-7.jpg" />
     <Content Include="Content\show.css" />
     <Content Include="Content\images\about.png" />
     <Content Include="Content\images\banner-product.jpg" />
@@ -272,6 +283,7 @@
     <Content Include="Views\Home\Product.cshtml" />
     <Content Include="Views\Home\Honor.cshtml" />
     <Content Include="Views\Home\Show.cshtml" />
+    <Content Include="Views\Home\Sample.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

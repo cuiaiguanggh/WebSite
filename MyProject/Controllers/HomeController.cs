@@ -46,5 +46,13 @@ namespace MyProject.Controllers
             return View();
 
         }
+
+        public ActionResult Sample()
+        {
+            ViewBag.Message = "工程案例";
+
+            return View();
+
+        }
     }
 }
