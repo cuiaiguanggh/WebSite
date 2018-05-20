@@ -1,0 +1,39 @@
+﻿.banner-product-box{
+    height:240px;
+    background:url("/Content/images/banner-product.jpg") center;
+    margin-bottom:20px;
+}
+.product-inner{
+    border:1px solid #ccc;
+    overflow:hidden;
+    position:relative;
+    cursor:pointer;
+}
+.product-inner img{
+    width:100%;
+}
+.product-title{
+    height:30px;
+    text-align:center;
+    line-height:30px;
+    background-color:#eee;
+    transition:height .3s;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+.product-inner:hover .product-title{
+    height:50px;
+    background-color:#0094ff;
+    line-height:50px;
+    color:#fff;
+
+}
+.product-box .row>div{
+    margin-bottom:30px;
+}
+
+.navbar-inverse{
+    box-shadow:none;
+}

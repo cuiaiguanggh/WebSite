@@ -1,6 +1,6 @@
 ﻿html,body {
     padding:0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, "Microsoft YaHei";
     height:100%;
 }
 
@@ -40,7 +40,9 @@ ul,li{
     border:0;
     color:#000;
     margin:0;
+    box-shadow: 0 0 10px 5px #ddd;
 }
+
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
     color:#0094ff;
@@ -49,14 +51,34 @@ ul,li{
 .navbar-nav li.active{
    border-bottom:3px solid #0094ff;
 }
-
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus{
+    color:#0094ff;
+}
 .navbar-inverse .navbar-nav > .active > a{
    background-color:transparent !important;
    color:#0094ff;
 }
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #4E4E4E;
+    font-size: 16px;
+}
+.navbar-brand{
+    font-size:30px;
+    color: #4E4E4E !important;
+}
 .navbar-inverse .navbar-nav > .active > a:hover{
    color:#0094ff !important;
 }
+.navbar-toggle {
+    background-color: #0094ff !important;
+    border: #0094ff !important;
+
+}
+
+
+
+
 .wrap{
     max-width:1200px;
     background-color:#fff;
@@ -98,12 +120,116 @@ ul,li{
     color:#333;
 }
 .foot-nav-box{
-    margin-top:20px;
-    margin-bottom:30px;
+    margin:35px auto 30px auto;
 }
 footer{
     text-align:center;font-size:10px;background-color:#0095D9;padding:8px 0px;color:#fff;
 }
 footer p{
     margin:0;
+}
+
+.text-center{
+    text-align:center;
+}
+
+.title-section{
+    font-size:30px;
+    margin:30px auto 20px auto;
+}
+.section-box{
+    height:40px;
+    width:172px;
+    border:1px solid #ccc;
+    line-height:40px;
+    text-align:center;
+    font-size:24px;
+    margin:auto;
+    position:relative;
+    margin-bottom:15px;
+}
+.section-box::before,.section-box::after{
+    content:"";
+    display:inline-block;
+    position:absolute;
+    height:1px;
+    width:120px;
+    border-top:1px solid #ccc;
+    top:50%;
+    
+}
+.section-box::before{
+    left:-100px;
+}
+.section-box::after{
+    right:-100px;
+}
+.text-indent{
+    text-indent:2em;
+}
+
+.logo-box{
+    float: left;
+    height: 65px;
+    margin-right: 14px;
+}
+.name-box{
+    display: inline-block;
+    font-size: 18px;
+    float: left;
+    margin-top: 12px;
+}
+.name-box a{
+    text-decoration:none !important;
+    color:#000;
+    font-size:26px;
+}
+.name-box p{
+    letter-spacing:4px;
+    font-size:13px;
+    margin: 6px 0 10px;
+}
+
+
+@media (min-width: 768px){
+    ul.nav.navbar-nav{
+        float:right;
+    }
+    .navbar-inverse{
+        padding: 16px 0 8px 0;
+    }
+    .container > .navbar-header, .container > .navbar-collapse {
+        margin-left: 15px;
+    }
+    
+
+}
+
+@media (max-width: 768px){
+    .navbar-nav li.active{
+        background-color:#0094ff;
+    }
+    .navbar-nav li.active a,.navbar-inverse .navbar-nav > .active > a:hover{
+        color:#fff !important;
+    }
+}
+
+
+
+@media (max-width: 1200px){
+    .wrap{
+        padding:0 15px;
+    }
+
+}
+
+@media (min-width: 1200px){
+    .navbar-container {
+        max-width: 1270px;
+    }
+}
+@media (min-width: 768px){
+    .navbar > .container .navbar-brand {
+    margin-left: 0px;
+}
 }

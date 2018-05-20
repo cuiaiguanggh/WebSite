@@ -3,29 +3,39 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <meta name="description" content="浙江汇诚电力科技有限公司,汇诚电力、汇诚、电力、电器" />
+    <meta name="Keywords" content="浙江汇诚电力科技有限公司,汇诚电力,汇诚,电力,电器,浙江汇诚" />
+    <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link href="~/Content/swiper.min.css" rel="stylesheet" />
 </head>
 <body>
     <div class="navbar navbar-inverse">
-        <div class="container">
+        <div class="container navbar-container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("科锐科技有限公司", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <div class="navbar-brand" style="padding:0">
+                    <img src="~/Content/images/hc_logo.png" class="logo-box" alt="汇诚电力" />
+                    <div class="name-box">
+                        @Html.ActionLink("浙江汇诚电力科技有限公司", "Index", "Home", new { area = "" }, new { @class = "" })
+                        <p>ZHEJIANG HUICHENG ELECTRIC</p>
+                    </div>
+                </div>
+                
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active">@Html.ActionLink("首页", "Index", "Home")</li>
-                    <li>@Html.ActionLink("产品与服务", "About", "Home")</li>
-                    <li>@Html.ActionLink("企业荣誉", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("企业展示", "About", "Home")</li>
-                    <li>@Html.ActionLink("关于我们", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("首页", "Index", "Home")</li>
+                    <li>@Html.ActionLink("产品中心", "Product", "Home")</li>
+                    <li>@Html.ActionLink("企业荣誉", "Honor", "Home")</li>
+                    <li>@Html.ActionLink("企业展示", "Show", "Home")</li>
+                    <li>@Html.ActionLink("工程案例", "Sample", "Home")</li>
+                    <li>@Html.ActionLink("关于我们", "About", "Home")</li>
                     <li>@Html.ActionLink("联系我们", "Contact", "Home")</li>
                 </ul>               
             </div>
@@ -37,33 +47,31 @@
             <ul class="clearfix">
                 <li>
                     <h4>走进我们</h4>
-                    <p><a>企业简介</a></p>
-                    <p><a>企业简介</a></p>
+                    <p>@Html.ActionLink("关于我们", "About", "Home")</p>
+                    <p>@Html.ActionLink("企业荣誉", "Honor", "Home")</p>
                 </li>
                 <li>
-                    <h4>走进我们</h4>
-                    <p><a>企业简介</a></p>
-                    <p><a>企业简介</a></p>
+                    <h4>产品中心</h4>
+                    <p>@Html.ActionLink("产品中心", "Product", "Home")</p>
                 </li>
                 <li>
-                    <h4>走进我们</h4>
-                    <p><a>企业简介</a></p>
-                    <p><a>企业简介</a></p>
+                    <h4>企业展示</h4>
+                    <p>@Html.ActionLink("企业展示", "Show", "Home")</p>
                 </li>
                 <li>
-                    <h4>走进我们</h4>
-                    <p><a>企业简介</a></p>
-                    <p><a>企业简介</a></p>
+                    <h4>联系我们</h4>
+                    <p>@Html.ActionLink("联系我们", "Contact", "Home")</p>
                 </li>
             </ul>
         </div>
         <footer>
-            <p>Copyright © 2018 科润智能控制股份有限公司 All rights reserved. 技术支持：杭州哈博信息技术有限公司  浙ICP备11055228号   江山网警备案号：3308811146</p>
+            <p>Copyright © 2018 科润智能控制股份有限公司 All rights reserved.  浙ICP备11055228号   江山网警备案号：3308811146</p>
         </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")    
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/menu.js"></script>    
     @RenderSection("scripts", required: false)
 </body>
 </html>

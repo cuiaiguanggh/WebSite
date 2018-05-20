@@ -15,8 +15,7 @@ namespace MyProject.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
+           
             return View();
         }
 
@@ -25,6 +24,27 @@ namespace MyProject.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        public ActionResult Product()
+        {
+            ViewBag.Message = "产品与服务";
+
+            return View();
+        }
+        public ActionResult Honor()
+        {
+            ViewBag.Message = "企业荣誉";
+
+            return View();
+        }
+
+        public ActionResult Show()
+        {
+            ViewBag.Message = "企业展示";
+
+            return View();
+
         }
     }
 }

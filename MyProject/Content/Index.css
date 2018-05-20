@@ -25,6 +25,13 @@
     background-color:red;
     position:relative;
 }
+.into-our-box{
+    background:url("/Content/images/company.jpg") center;
+}
+.company-honor-box{
+    background:url("/Content/images/honor.jpg")  no-repeat center;
+    background-size:100%;
+}
 .title-line{
     width:1px;
     background-color:#000;
@@ -64,4 +71,7 @@
     color:#0094ff;
     margin-top:10px;
     display:inline-block;
+}
+.navbar-inverse{
+    box-shadow:none;
 }

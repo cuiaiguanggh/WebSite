@@ -1,0 +1,14 @@
+﻿
+.honor-inner{
+    border:1px solid #ccc;
+    overflow:hidden;
+    position:relative;
+    cursor:pointer;
+}
+.honor-inner img{
+    width:100%;
+}
+
+.honor-box .row>div{
+    margin-bottom:30px;
+}
