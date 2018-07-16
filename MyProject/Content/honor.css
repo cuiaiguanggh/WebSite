@@ -8,7 +8,7 @@
     cursor:pointer;
 }
 .honor-inner img{
-    height:100%;
+    max-width:100%;
 }
 
 .honor-box .row>div{
