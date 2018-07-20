@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "联系我们";
+    ViewBag.Title = "Contact";
 }
 <style type="text/css">
     .iw_poi_title {
@@ -23,28 +23,29 @@
 <input type="hidden" id="selectIndex" value="6" />
 
 <div class="text-center title-section">CONTACT OUR</div>
-<div class="section-box">@ViewBag.Title</div>
+<div class="section-box">联系我们</div>
 
 
 <div class="row wrap">
     <div class="col-md-6">
         <div style="margin:auto;text-align:left;font-size:18px;padding:20px 10px;">
             <address>
-                <strong>电话:</strong><a href="tel:0570-4333636">0570-4333636</a><br />
-                <strong>传真:</strong><a href="#">0570-4320320</a>
+                <strong>电话:</strong><a href="tel:1883400000">18834000000</a><br />
+                <strong>传真:</strong><a href="mailto:Marketing@example.com">0571-0000000</a>
             </address>
             <address>
-                <strong>邮编:</strong>324100<br />
+                <strong>邮箱:</strong><a href="mailto:Support@example.com">Support@example.com</a><br />
+                <strong>邮编:</strong>046100<br />
             </address>
-            <address>
-                <strong>地址:</strong>浙江省江山市江东经济开发区兴工路1号
+            <address>              
+                <strong>地址:</strong>城西银泰
             </address>
         </div>
     </div>
 
     <div class="col-md-6">
         <br />
-        <h1>@ViewBag.Title</h1>
+        <h1>联系我们</h1>
         <h2 style="color:#ccc;font-weight:bold">CONTACTS US</h2>
     </div>
 </div>
@@ -53,22 +54,23 @@
 
 <script type="text/javascript">
     //创建和初始化地图函数：
-    function initMap() {
+    function initMap(){
         createMap();//创建地图
         setMapEvent();//设置地图事件
         addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
     }
 
     //创建地图函数：
-    function createMap() {
+    function createMap(){
         var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-        var point = new BMap.Point(118.724326, 28.800462);//定义一个中心点坐标
-        map.centerAndZoom(point, 17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        var point = new BMap.Point(120.118944,30.305553);//定义一个中心点坐标
+        map.centerAndZoom(point,16);//设定地图的中心点和坐标并将地图显示在地图容器中
         window.map = map;//将map变量存储在全局
     }
 
     //地图事件设置函数：
-    function setMapEvent() {
+    function setMapEvent(){
         map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
         map.enableScrollWheelZoom();//启用地图滚轮放大缩小
         map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
@@ -76,18 +78,74 @@
     }
 
     //地图控件添加函数：
-    function addMapControl() {
+    function addMapControl(){
         //向地图中添加缩放控件
-        var ctrl_nav = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE });
-        map.addControl(ctrl_nav);
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+	map.addControl(ctrl_nav);
         //向地图中添加缩略图控件
-        var ctrl_ove = new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: 1 });
-        map.addControl(ctrl_ove);
+	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+	map.addControl(ctrl_ove);
         //向地图中添加比例尺控件
-        var ctrl_sca = new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_LEFT });
-        map.addControl(ctrl_sca);
+	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+	map.addControl(ctrl_sca);
     }
 
+    //标注点数组
+    var markerArr = [{title:"我的公司",content:"我的备注",point:"120.113716|30.305802",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+		 ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+			var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+			var iw = createInfoWindow(i);
+			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+			marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+
+			(function(){
+				var index = i;
+				var _iw = createInfoWindow(i);
+				var _marker = marker;
+				_marker.addEventListener("click",function(){
+				    this.openInfoWindow(_iw);
+			    });
+			    _iw.addEventListener("open",function(){
+				    _marker.getLabel().hide();
+			    })
+			    _iw.addEventListener("close",function(){
+				    _marker.getLabel().show();
+			    })
+				label.addEventListener("click",function(){
+				    _marker.openInfoWindow(_iw);
+			    })
+				if(!!json.isOpen){
+					label.hide();
+					_marker.openInfoWindow(_iw);
+				}
+			})()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
 
     initMap();//创建和初始化地图
 </script>

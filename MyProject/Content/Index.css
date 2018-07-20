@@ -19,6 +19,10 @@
     border-color:#0094ff;
 }
 
+.banner-hc {
+    height:800px;
+    background: url("/Content/images/hc_banner.jpg") 100% center;
+}
 .into-our-box,.company-honor-box{
     width:530px;
     height:300px;
@@ -42,7 +46,7 @@
     top: 2px;
 }
 .into-our-box .mask,.company-honor-box .mask{
-    background-color:rgba(0,0,0,0.6);
+    background-color:rgba(0,0,0,0.4);
     width:240px;
     height:180px;
     position:absolute;
