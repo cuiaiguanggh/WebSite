@@ -37,6 +37,7 @@ ul,li{
 .navbar-inverse{
     background-color:#fff;
     border:0;
+    border-radius:0 !important;
     color:#000;
     margin:0;
     box-shadow: 0 0 10px 5px #ddd;

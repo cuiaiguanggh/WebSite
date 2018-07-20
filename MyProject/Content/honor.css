@@ -5,10 +5,10 @@
     border:1px solid #ccc;
     overflow:hidden;
     position:relative;
-    cursor:pointer;
+    width:600px;
 }
 .honor-inner img{
-    height:100%;
+    width:100%;
 }
 
 .honor-box .row>div{

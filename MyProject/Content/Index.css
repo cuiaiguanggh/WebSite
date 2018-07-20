@@ -18,15 +18,19 @@
     background-color:#0094ff;
     border-color:#0094ff;
 }
-
+.hc-banner {
+    height:760px;
+    background: url("/Content/images/hc_banner.jpg") 100% center;
+}
 .into-our-box,.company-honor-box{
     width:530px;
     height:300px;
     background-color:red;
     position:relative;
 }
-.into-our-box{
-    background:url("/Content/images/company.jpg") center;
+.into-our-box {
+    background: url("/Content/images/company.png") center;
+    background-size: 100%;
 }
 .company-honor-box{
     background:url("/Content/images/honor.jpg")  no-repeat center;
@@ -80,8 +84,8 @@
     margin-top:10px;
     display:inline-block;
 }
-.navbar-inverse{
-    box-shadow:none;
+.navbar-inverse {
+    box-shadow: 0 0 10px 5px #5d5d5d !important;
 }
 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
     bottom:5px;
