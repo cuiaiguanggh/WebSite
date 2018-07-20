@@ -1,15 +1,13 @@
 ﻿
-.show-inner {
+.sample-inner {
     border: 1px solid #ccc;
     overflow: hidden;
     position: relative;
-    cursor: pointer;
-    max-height:160px;
 }
-.show-inner img {
+.sample-inner img {
     width: 100%;
 }
 
-.show-box .row > div {
+.sample-box .row > div {
     margin-bottom: 30px;
 }

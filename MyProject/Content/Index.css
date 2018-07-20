@@ -18,9 +18,8 @@
     background-color:#0094ff;
     border-color:#0094ff;
 }
-
-.banner-hc {
-    height:800px;
+.hc-banner {
+    height:760px;
     background: url("/Content/images/hc_banner.jpg") 100% center;
 }
 .into-our-box,.company-honor-box{
@@ -28,9 +27,11 @@
     height:300px;
     background-color:red;
     position:relative;
+    transition: all .3s;
 }
-.into-our-box{
-    background:url("/Content/images/company.jpg") center;
+.into-our-box {
+    background: url("/Content/images/company.png") center;
+    background-size: 100%;
 }
 .company-honor-box{
     background:url("/Content/images/honor.jpg")  no-repeat center;
@@ -54,6 +55,9 @@
     bottom:0;
     color:#fff;
     padding:15px;
+}
+.into-our-box:hover, .company-honor-box:hover {
+    background-size: 120%;
 }
 .mask p.en{
     font-size:16px;
@@ -84,12 +88,15 @@
     margin-top:10px;
     display:inline-block;
 }
-.navbar-inverse{
-    box-shadow:none;
+.navbar-inverse {
+    box-shadow: 0 0 2px 3px #909090;
 }
 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
     bottom:5px;
 }
 .text-a a{
     color:#fff;
+}
+h4{
+    margin-bottom:12px;
 }

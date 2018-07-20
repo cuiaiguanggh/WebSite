@@ -1,7 +1,7 @@
-﻿.banner-product-box{
-    height:240px;
-    background:url("/Content/images/banner-product.jpg") center;
-    margin-bottom:20px;
+﻿.banner-product-box {
+    height: 260px;
+    background: url("/Content/images/banner-product.jpg") center;
+    margin-bottom: 20px;
 }
 .product-inner{
     border:1px solid #ccc;
@@ -36,8 +36,8 @@
     margin-bottom:30px;
 }
 
-.navbar-inverse{
-    box-shadow:none;
+.navbar-inverse {
+    box-shadow: 0 0 2px 3px #909090;
 }
 .product-inner div:nth-of-type(1){
     height:210px;
