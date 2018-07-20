@@ -209,13 +209,14 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\company.png" />
     <Content Include="Content\images\hc_banner.jpg" />
     <Content Include="Content\images\hc_logo.png" />
     <Content Include="Content\images\honor.jpg" />
-    <Content Include="Content\images\honor\honer_1.jpg" />
-    <Content Include="Content\images\honor\honer_2.jpg" />
-    <Content Include="Content\images\honor\honer_3.jpg" />
-    <Content Include="Content\images\honor\honer_4.jpg" />
+    <Content Include="Content\images\honor\honor_1.jpg" />
+    <Content Include="Content\images\honor\honor_2.jpg" />
+    <Content Include="Content\images\honor\honor_3.jpg" />
+    <Content Include="Content\images\honor\honor_4.jpg" />
     <Content Include="Content\images\product\product-1.jpg" />
     <Content Include="Content\images\product\product-10.jpg" />
     <Content Include="Content\images\product\product-11.jpg" />
@@ -239,6 +240,9 @@
     <Content Include="Content\images\show\show-5.jpg" />
     <Content Include="Content\images\show\show-6.jpg" />
     <Content Include="Content\images\show\show-7.jpg" />
+    <Content Include="Content\images\show\show-8.jpg" />
+    <Content Include="Content\images\show\show-9.jpg" />
+    <Content Include="Content\sample.css" />
     <Content Include="Content\show.css" />
     <Content Include="Content\images\about.png" />
     <Content Include="Content\images\banner-product.jpg" />

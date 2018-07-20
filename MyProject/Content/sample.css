@@ -1,0 +1,13 @@
+﻿
+.sample-inner {
+    border: 1px solid #ccc;
+    overflow: hidden;
+    position: relative;
+}
+.sample-inner img {
+    width: 100%;
+}
+
+.sample-box .row > div {
+    margin-bottom: 30px;
+}
