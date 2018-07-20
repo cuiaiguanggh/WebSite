@@ -250,7 +250,6 @@
     <Content Include="Content\images\banner2.jpg" />
     <Content Include="Content\images\banner3.jpg" />
     <Content Include="Content\images\product.jpg" />
-    <Content Include="Content\images\product_p1.jpg" />
     <Content Include="Content\honor.css" />
     <Content Include="Content\product.css" />
     <Content Include="Content\index.css" />

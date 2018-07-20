@@ -85,7 +85,7 @@
     display:inline-block;
 }
 .navbar-inverse {
-    box-shadow: 0 0 10px 5px #5d5d5d !important;
+    box-shadow: 0 0 2px 3px #909090;
 }
 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
     bottom:5px;
