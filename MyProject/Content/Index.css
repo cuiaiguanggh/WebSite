@@ -27,6 +27,7 @@
     height:300px;
     background-color:red;
     position:relative;
+    transition: all .3s;
 }
 .into-our-box {
     background: url("/Content/images/company.png") center;
@@ -54,6 +55,9 @@
     bottom:0;
     color:#fff;
     padding:15px;
+}
+.into-our-box:hover, .company-honor-box:hover {
+    background-size: 120%;
 }
 .mask p.en{
     font-size:16px;
@@ -92,4 +96,7 @@
 }
 .text-a a{
     color:#fff;
+}
+h4{
+    margin-bottom:12px;
 }
